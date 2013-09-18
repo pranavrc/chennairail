@@ -7,7 +7,7 @@
 
         <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
         <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDg_NuTLeaUr7PkWpwZZPk3DpU6KfkLWFw&sensor=false"></script>
-        <script src="transit-min.js"></script>
+        <script src="transit.js"></script>
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <style type="text/css">
             html, body {
@@ -56,7 +56,7 @@
                 transit.initialize("#map",
                                    "chennai_rail_map.kml",
                                    "https://raw.github.com/pranavrc/chennairail/gh-pages/chennai_rail_map.kml",
-                                   schedule);
+                                   schedule, false);
             } else {
                 transit.initialize("#map",
                                    "chennai_rail_map.kml",
